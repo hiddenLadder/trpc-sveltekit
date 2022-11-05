@@ -131,7 +131,7 @@ export default trpc.createTRPCClient<Router>({ url: '/trpc' });
 5. Use the client like so:
 
 ```ts
-// page.svelte
+// +page.svelte
 import trpcClient from '$lib/trpcClient';
 
 const greeting = await trpcClient.query('hello');
